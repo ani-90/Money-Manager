@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+body{
+    font-family: 'Roboto',sans-serif;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+}
+
+.sidebar{
+    position: fixed;
+    left:0;
+    width:250px;
+    height:100%;
+    background:#042331;
+}
+
+.sidebar header{
+    font-size:22px;
+    color:whitesmoke;
+    text-align:center;
+    line-height:70px;
+    user-select: none;
+    background-color: cornflowerblue;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 68px;
+    font-size: 20px;
+    color:white;
+    padding-left: 35px;
+    box-sizing:border-box;
+    border-top: 1px solid rgba(255,255, 255, alpha);
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+ul li a:hover{
+    padding-left: 50px;
+
+}
+.sidebar ul a i{
+    margin-right: 15px;
+}
+
+
+
+section{
+     background-repeat:  no-repeat;
+    background-position: 200px;
+    background-image: url("https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=");
+    
+    background-size:90%;
+    height: 100vh;
+
+    
+
+
+}
+
+
+section div .inc_exp{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+.sbar ul ul{
+    position: static;
+    display: block;
+   
+}
+
+.sbar ul .drpdwn{
+    line-height: 52px;
+    border-bottom: none;
+    transition: none;
+}
+
+.sbar ul ul li a{
+    font-size: 10px;
+    color: #e6e6e6;
+   
+}
+.sbar ul ul li a span{
+    position: absolute;
+    top:50%;
+    right:20px;
+   
+    font-size:22px;
+  
+    text-align: left;
+}
+
+
+#inc{
+    position: absolute;
+    left: 510px;
+    top: 40%;
+    background-color: white;
+    display: none;
+    height:max-content;
+    text-align: center;
+    line-height: 50px;
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    border-left-width: 250px;
+    flex:1,0,auto;
+    background-color:rgb(130, 9, 154);
+    box-shadow: 10px,5px;
+    top: -400px;
+    animation: drop 1.5s ease forwards,
+                swing 2s
+}
+
+@keyframes drop {
+    0%{opacity: 0;}
+    70%{transform: translateY(500px);}
+    100%{transform: translateY(450px); opacity: 1;}
+}
+
+
+
+
+#add{
+    position: relative;
+    left: 200px;
+    width: fit-content;
+}
+
+.l1{
+    width: auto;
+    position: relative;
+    top: 30px;
+}
+.l2{
+    position: relative;
+    top:70px;
+}
+
+.lk{
+    position: relative;
+    top:45px;
+}
+.l3{
+    position: relative;
+    top: 75px;
+}
+
+#add{
+    position: relative;
+    top: 145px;
+    left: 277px;
+}
+
+#inc_exp{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+.clsbtn{
+    top:0;
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
+#data{
+    top:0;
+    background-color: white;
+    display: none;
+    left:500px;
+    box-sizing: border-box;
+    position: absolute;
+    width: fit-content;
+}
+
+#cf{
+    text-align: center;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background: rgb(220, 231, 231);
+}
+
+.row{
+    background: white;
+    border-radius: 30px;
+    box-shadow:grey;
+    display: flex;
+}
+
+img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+
+.btn1{
+    border:none;
+    outline:none;
+    height:50px;
+    width:100%;
+    background-color: black;
+    color:white;
+    border-radius:4px ;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+.btn1:hover{
+
+    background-color: white;
+    border:1px solid;
+    color:black
+
+}
+
+#mtxt{
+    position:relative;
+    font-size: 18px;
+    color: darkgoldenrod;
+}

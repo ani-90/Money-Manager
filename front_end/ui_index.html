@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="ui_index.css">
+
+        
+        
+        
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<body>
+    <div class="sidebar">
+    <header>Money Manager  </header>
+    <nav class="sbar">
+        <ul>
+            <li><a href="ui_index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="dashboard.html" class="dboard-btn"><i class="fa fa-qrcode" ></i>Dashboard</a></li>
+           
+            <li><a href="about.html"><i class="fa fa-male"></i>About</a></li>
+            <li><a href="#"><i class="fa fa-search"></i>Categories</a></li>
+        </ul>
+        
+  </nav>
+    </div>
+    <section>
+        
+        <header>Add Income/Expense Details</header>
+    <button type="button" class="btn btn-success" style="position: relative; margin-left: 700px; margin-top: 390px;" idd="add_inc"  onclick="add_income()"><i class="fa fa-plus">  Income</i></button>
+
+<button type="button" class="btn btn-danger" style="position: relative; margin-left: 40px; margin-top: 390px;" id="add_exp" onclick="add_expense()"><i class="fa fa-minus">  Expense</i></button>
+  
+</section>
+<form id="inc" action="/amount" method="POST">
+<span id="inc_exp">Income Tracker</span><span style="float:right; "><button type="button" id ="clsbtn"  onclick="remove()">&times;</button></span>
+ 
+  <table id="f_inc">
+      
+      <tr class="l1">
+          <td colspan="4" style="left: 145px;"><label  >Amount<span>(<i class="fa fa-inr"></i>)</span></label></td>
+          <td colspan="7"><input type="number" required class="l1" id="f1" name="amount"> </td>
+          <td colspan="2" style="left: 145px;"><label >Date</label></td>
+          <td colspan="5"><input type="date" required class="l1" id="f2" name="date"></td>
+
+      </tr>
+
+      <tr class="lk">
+        <td colspan="2" style="left: 145px;"><label >Month</label></td>
+        <td colspan="5"><input type="text" required class="l1" id="fk" name="month" placeholder="dont fill this" ></td>
+        <td colspan="5" style="left: 145px; text-align: center;"><label >Year</label></td>
+        <td colspan="5"><input type="text" required class="l1" id="fj" name="year" placeholder="don't fill this" ></td>
+
+      </tr>
+      <tr class="l2">
+        <td colspan="2"><label >Description</label></td>
+        <td colspan="5"><input type="text" class="l2" id="f3" name="description"></td>
+        <td colspan="5"><label >Category</label></td>
+        <td colspan="5"><input type="text" required class="l2" id="f4" name="category"></td>
+
+        
+    </tr>
+    
+    <tr class="l3">
+
+        <td colspan="5" class="l3"><label>Office</label></td>
+        <td><input type="radio" name="office_personal" required class="l3" id="f5" value="Office" ></td>
+        <td colspan="5" class="l3"><label>Personal</label></td>
+        <td><input type="radio" name="office_personal" required class="l3" id="f6" value="personal" ></td>
+    </tr>
+    <tr>
+        <td><input type="submit" class="btn btn-success" id="add"  placeholder="Add" onclick="foo()">
+        </td>
+        </tr>
+  </table>
+</form>
+<div>
+        <form id="data">
+            <table>
+                <tr>
+                <td><h3 style="text-align:center;font-weight: lighter;"><b>Data Added Successfully !!!</b></h3></td>
+                </tr>
+                <tr>
+                  <td colspan="10" style="text-align: center;"><a href="transactions.html"><button type="button" class="btn btn-primary" id="cf" >  OK</button></a></td>
+
+                 </tr>
+            </table>
+        </form>
+
+</div>
+  
+  
+</body>
+<script src="ui_index.js"></script>
+</html>
